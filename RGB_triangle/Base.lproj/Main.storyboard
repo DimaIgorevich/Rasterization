@@ -70,9 +70,16 @@
                                     <constraint firstAttribute="width" secondItem="bLT-6k-2gn" secondAttribute="height" multiplier="165:52" id="yL9-zR-WsG"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hex:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePF-As-x1A">
+                                <rect key="frame" x="89" y="135" width="197" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ePF-As-x1A" firstAttribute="top" secondItem="bLT-6k-2gn" secondAttribute="bottom" constant="5" id="2WS-qq-9XX"/>
                             <constraint firstItem="BGR-ED-jH3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="4Q6-y3-gXC"/>
                             <constraint firstItem="bLT-6k-2gn" firstAttribute="top" secondItem="BGR-ED-jH3" secondAttribute="bottom" constant="10" id="ALe-MN-6uf"/>
                             <constraint firstItem="sHB-yK-Kne" firstAttribute="top" secondItem="aG5-A3-VQC" secondAttribute="bottom" constant="8" id="Fkz-b2-2CP"/>
@@ -85,12 +92,15 @@
                             <constraint firstItem="sHB-yK-Kne" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j2S-gT-JSj"/>
                             <constraint firstItem="aG5-A3-VQC" firstAttribute="centerX" secondItem="sHB-yK-Kne" secondAttribute="centerX" id="jFf-ck-QK2"/>
                             <constraint firstItem="Wzc-xS-6H2" firstAttribute="top" secondItem="sHB-yK-Kne" secondAttribute="bottom" constant="8" id="jzy-On-qiz"/>
+                            <constraint firstItem="ePF-As-x1A" firstAttribute="trailing" secondItem="3vZ-GH-m5m" secondAttribute="trailing" id="mex-YT-ApH"/>
                             <constraint firstItem="4EU-fQ-S3a" firstAttribute="centerX" secondItem="sHB-yK-Kne" secondAttribute="trailing" id="ohf-mI-VfK"/>
                             <constraint firstItem="sHB-yK-Kne" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qxY-b8-3hy"/>
+                            <constraint firstItem="ePF-As-x1A" firstAttribute="leading" secondItem="3vZ-GH-m5m" secondAttribute="leading" id="t4M-Pe-UQ0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="lblColorHex" destination="ePF-As-x1A" id="00b-7i-DaQ"/>
                         <outlet property="vColorResult" destination="3vZ-GH-m5m" id="A2L-1X-Etr"/>
                         <outlet property="vTriangle" destination="sHB-yK-Kne" id="GG6-ne-CCW"/>
                     </connections>

@@ -26,7 +26,10 @@ typedef struct {
 
 @property (weak, nonatomic) IBOutlet UIView *vTriangle;
 
+@property (weak, nonatomic) IBOutlet UILabel *lblColorHex;
+
 @property (weak, nonatomic) IBOutlet UIView *vColorResult;
+
 @end
 
 @implementation ViewController
@@ -41,6 +44,19 @@ typedef struct {
 }
 
 #pragma mark - Helpers
+
+- (NSString *)hexStringFromColor:(UIColor *)color {
+    const CGFloat *components = CGColorGetComponents(color.CGColor);
+    
+    CGFloat r = components[0];
+    CGFloat g = components[1];
+    CGFloat b = components[2];
+    
+    return [NSString stringWithFormat:@"#%02lX%02lX%02lX",
+            lroundf(r * colorR),
+            lroundf(g * colorG),
+            lroundf(b * colorB)];
+}
 
 - (void)initPoints {
     V1 = CGPointMake(0, CGRectGetHeight(self.vTriangle.frame));
@@ -104,6 +120,7 @@ float sign (CGPoint p1, CGPoint p2, CGPoint p3) {
             
             BaricentricColor color = {l1, l2, l3};
             self.vColorResult.backgroundColor = [self baricentricColor:color];
+            self.lblColorHex.text = [NSString stringWithFormat:@"hex: %@", [self hexStringFromColor:self.vColorResult.backgroundColor]];
         }
     }
 }
