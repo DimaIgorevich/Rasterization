@@ -1,0 +1,18 @@
+//
+//  BCPrefixHeader.pch
+//  RGB_triangle
+//
+//  Created by dRumyankov on 11/28/17.
+//  Copyright © 2017 GFL. All rights reserved.
+//
+
+#ifndef BCPrefixHeader_pch
+#define BCPrefixHeader_pch
+
+#import "BCModelHeader.h"
+
+#import "BCCategoryHeader.h"
+
+#import "BCHelperHeader.h"
+
+#endif /* BCPrefixHeader_pch */

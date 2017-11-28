@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4958B3861FCD4418007F9D1D /* UIColor+ColorFromBaricentric.m in Sources */ = {isa = PBXBuildFile; fileRef = 4958B3851FCD4418007F9D1D /* UIColor+ColorFromBaricentric.m */; };
+		4958B38A1FCD4700007F9D1D /* BCTouchPointTriangleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4958B3891FCD4700007F9D1D /* BCTouchPointTriangleHelper.m */; };
+		4958B3991FCD4DC5007F9D1D /* BCBaricentricForTriangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4958B3981FCD4DC5007F9D1D /* BCBaricentricForTriangle.m */; };
+		495DC7C51FCD40B600A48C2B /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 495DC7C41FCD40B600A48C2B /* UIColor+HexString.m */; };
 		4983972F1FCC0FA4006A3C1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4983972E1FCC0FA4006A3C1B /* AppDelegate.m */; };
 		498397321FCC0FA4006A3C1B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498397311FCC0FA4006A3C1B /* ViewController.m */; };
 		498397351FCC0FA4006A3C1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 498397331FCC0FA4006A3C1B /* Main.storyboard */; };
@@ -39,6 +43,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4958B3811FCD4286007F9D1D /* BCPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCPrefixHeader.pch; sourceTree = "<group>"; };
+		4958B3841FCD4418007F9D1D /* UIColor+ColorFromBaricentric.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+ColorFromBaricentric.h"; sourceTree = "<group>"; };
+		4958B3851FCD4418007F9D1D /* UIColor+ColorFromBaricentric.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorFromBaricentric.m"; sourceTree = "<group>"; };
+		4958B3881FCD4700007F9D1D /* BCTouchPointTriangleHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCTouchPointTriangleHelper.h; sourceTree = "<group>"; };
+		4958B3891FCD4700007F9D1D /* BCTouchPointTriangleHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCTouchPointTriangleHelper.m; sourceTree = "<group>"; };
+		4958B38B1FCD4715007F9D1D /* BCHelperHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCHelperHeader.h; sourceTree = "<group>"; };
+		4958B38F1FCD4836007F9D1D /* BCModelHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCModelHeader.h; sourceTree = "<group>"; };
+		4958B3951FCD4A6A007F9D1D /* BCTriangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCTriangle.h; sourceTree = "<group>"; };
+		4958B3971FCD4DC5007F9D1D /* BCBaricentricForTriangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCBaricentricForTriangle.h; sourceTree = "<group>"; };
+		4958B3981FCD4DC5007F9D1D /* BCBaricentricForTriangle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCBaricentricForTriangle.m; sourceTree = "<group>"; };
+		495DC7C31FCD40B600A48C2B /* UIColor+HexString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
+		495DC7C41FCD40B600A48C2B /* UIColor+HexString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
+		495DC7C61FCD414800A48C2B /* BCCategoryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCCategoryHeader.h; sourceTree = "<group>"; };
 		4983972A1FCC0FA4006A3C1B /* RGB_triangle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGB_triangle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4983972D1FCC0FA4006A3C1B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4983972E1FCC0FA4006A3C1B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -90,6 +107,141 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4958B3801FCD41AD007F9D1D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				498397301FCC0FA4006A3C1B /* ViewController.h */,
+				498397311FCC0FA4006A3C1B /* ViewController.m */,
+				498397331FCC0FA4006A3C1B /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4958B3821FCD42DC007F9D1D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4958B38B1FCD4715007F9D1D /* BCHelperHeader.h */,
+				4958B3871FCD46F3007F9D1D /* TouchPointTriangleHelper */,
+				4958B3961FCD4DA0007F9D1D /* BaricentricForTriangle */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4958B3831FCD43DB007F9D1D /* UIColor+ColorFromBaricentric */ = {
+			isa = PBXGroup;
+			children = (
+				4958B3841FCD4418007F9D1D /* UIColor+ColorFromBaricentric.h */,
+				4958B3851FCD4418007F9D1D /* UIColor+ColorFromBaricentric.m */,
+			);
+			path = "UIColor+ColorFromBaricentric";
+			sourceTree = "<group>";
+		};
+		4958B3871FCD46F3007F9D1D /* TouchPointTriangleHelper */ = {
+			isa = PBXGroup;
+			children = (
+				4958B3881FCD4700007F9D1D /* BCTouchPointTriangleHelper.h */,
+				4958B3891FCD4700007F9D1D /* BCTouchPointTriangleHelper.m */,
+			);
+			path = TouchPointTriangleHelper;
+			sourceTree = "<group>";
+		};
+		4958B38C1FCD4816007F9D1D /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				4958B38D1FCD481F007F9D1D /* Model */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		4958B38D1FCD481F007F9D1D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4958B38F1FCD4836007F9D1D /* BCModelHeader.h */,
+				4958B3941FCD4A5C007F9D1D /* Triangle */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4958B3941FCD4A5C007F9D1D /* Triangle */ = {
+			isa = PBXGroup;
+			children = (
+				4958B3951FCD4A6A007F9D1D /* BCTriangle.h */,
+			);
+			path = Triangle;
+			sourceTree = "<group>";
+		};
+		4958B3961FCD4DA0007F9D1D /* BaricentricForTriangle */ = {
+			isa = PBXGroup;
+			children = (
+				4958B3971FCD4DC5007F9D1D /* BCBaricentricForTriangle.h */,
+				4958B3981FCD4DC5007F9D1D /* BCBaricentricForTriangle.m */,
+			);
+			path = BaricentricForTriangle;
+			sourceTree = "<group>";
+		};
+		495DC7C01FCD408000A48C2B /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				4958B3821FCD42DC007F9D1D /* Helpers */,
+				495DC7C11FCD408D00A48C2B /* Categories */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		495DC7C11FCD408D00A48C2B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				495DC7C61FCD414800A48C2B /* BCCategoryHeader.h */,
+				495DC7C21FCD409700A48C2B /* UIColor+HexString */,
+				4958B3831FCD43DB007F9D1D /* UIColor+ColorFromBaricentric */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		495DC7C21FCD409700A48C2B /* UIColor+HexString */ = {
+			isa = PBXGroup;
+			children = (
+				495DC7C31FCD40B600A48C2B /* UIColor+HexString.h */,
+				495DC7C41FCD40B600A48C2B /* UIColor+HexString.m */,
+			);
+			path = "UIColor+HexString";
+			sourceTree = "<group>";
+		};
+		495DC7C71FCD415C00A48C2B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				498397361FCC0FA4006A3C1B /* Assets.xcassets */,
+				4983973B1FCC0FA4006A3C1B /* Info.plist */,
+				4983973C1FCC0FA4006A3C1B /* main.m */,
+				4958B3811FCD4286007F9D1D /* BCPrefixHeader.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		495DC7C81FCD417100A48C2B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				495DC7C91FCD417900A48C2B /* Views */,
+				495DC7CA1FCD418500A48C2B /* Screens */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		495DC7C91FCD417900A48C2B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		495DC7CA1FCD418500A48C2B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				4958B3801FCD41AD007F9D1D /* Main */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		498397211FCC0FA4006A3C1B = {
 			isa = PBXGroup;
 			children = (
@@ -114,15 +266,13 @@
 		4983972C1FCC0FA4006A3C1B /* RGB_triangle */ = {
 			isa = PBXGroup;
 			children = (
+				495DC7C01FCD408000A48C2B /* Libraries */,
+				4958B38C1FCD4816007F9D1D /* Logic */,
+				495DC7C81FCD417100A48C2B /* UI */,
 				4983972D1FCC0FA4006A3C1B /* AppDelegate.h */,
 				4983972E1FCC0FA4006A3C1B /* AppDelegate.m */,
-				498397301FCC0FA4006A3C1B /* ViewController.h */,
-				498397311FCC0FA4006A3C1B /* ViewController.m */,
-				498397331FCC0FA4006A3C1B /* Main.storyboard */,
-				498397361FCC0FA4006A3C1B /* Assets.xcassets */,
 				498397381FCC0FA4006A3C1B /* LaunchScreen.storyboard */,
-				4983973B1FCC0FA4006A3C1B /* Info.plist */,
-				4983973C1FCC0FA4006A3C1B /* main.m */,
+				495DC7C71FCD415C00A48C2B /* Supporting Files */,
 			);
 			path = RGB_triangle;
 			sourceTree = "<group>";
@@ -290,8 +440,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				498397321FCC0FA4006A3C1B /* ViewController.m in Sources */,
+				4958B3991FCD4DC5007F9D1D /* BCBaricentricForTriangle.m in Sources */,
+				4958B38A1FCD4700007F9D1D /* BCTouchPointTriangleHelper.m in Sources */,
 				4983973D1FCC0FA4006A3C1B /* main.m in Sources */,
+				495DC7C51FCD40B600A48C2B /* UIColor+HexString.m in Sources */,
 				4983972F1FCC0FA4006A3C1B /* AppDelegate.m in Sources */,
+				4958B3861FCD4418007F9D1D /* UIColor+ColorFromBaricentric.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,7 +610,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T8FTS9342H;
-				INFOPLIST_FILE = RGB_triangle/Info.plist;
+				GCC_PREFIX_HEADER = "$(PROJECT)/Supporting Files/BCPrefixHeader.pch";
+				INFOPLIST_FILE = "RGB_triangle/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.InfiroomStudio.RGB-triangle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -470,7 +625,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T8FTS9342H;
-				INFOPLIST_FILE = RGB_triangle/Info.plist;
+				GCC_PREFIX_HEADER = "$(PROJECT)/Supporting Files/BCPrefixHeader.pch";
+				INFOPLIST_FILE = "RGB_triangle/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.InfiroomStudio.RGB-triangle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
